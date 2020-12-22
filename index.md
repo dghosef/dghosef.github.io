@@ -15,4 +15,4 @@ Scrapes data from [fplreview](https://fplreview.com/) and uses linear programmin
 The dotfiles for my Arch Linux setup that I spent way too long messing around with. Includes my i3, (neo)vim, and tmux config files.
 
 ## Contact
-The best way to contact me is at my email jdtan638@gmail.com
+The best way to contact me is at my email [mailto](mailto:dghosef@stanford.edu)
