@@ -4,12 +4,14 @@
 body {
     background-color: #121212;
 }
-h3 {
-    text-decoration: underline;
-}
 $body-text-color: #FFFFFFDE;
 
 @import "{{ site.theme }}";
 .site-footer {
     display: none;
+}
+h3 {
+    a {
+        text-decoration: underline;
+    }
 }
