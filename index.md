@@ -1,5 +1,5 @@
 ## Hi all
-Joseph Tan here. I enjoy making computers do cool stuff, playing the piano and guitar, all things soccer, and messing around with my two wonderful dogs. I'm currently studying computer science at Stanford University. [Here](resume) is a link to my resume.
+Joseph Tan here. I enjoy making computers do cool stuff, playing the piano and guitar, all things soccer, and messing around with my two wonderful dogs. I'm currently studying computer science at Stanford University. [Here](resume.pdf) is a link to my resume.
 
 ## Projects
 
