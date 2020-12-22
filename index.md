@@ -18,9 +18,9 @@ The dotfiles for my Arch Linux setup that I spent way too long messing around wi
 Back in High School, I took a bunch of stories of people making funny mistakes from [r/tifu](https://reddit.com/r/tifu), compiled them into a book(with permission of the original authors of course) and self-published it onto Amazon. I used the pen name Benjamin Success just because. It's sales numbers have been abysmal, but now I can say I am a published author, which is a win in my books.
 
 ## Interesting links
-[My Github](https://github.com/dghosef/)
-[The webpage of the robotics team I founded back in high school](https://heritage-schools.org/academics/robotics/)
-[The pickup soccer place I frequent(before covid)](https://northridgefutsal.soccer/)
+[My Github](https://github.com/dghosef/) \
+[The webpage of the robotics team I founded back in high school](https://heritage-schools.org/academics/robotics/) \
+[The pickup soccer place I frequent(before covid)](https://northridgefutsal.soccer/) \
 
 ## Contact
 The best way to contact me is at my email [dghosef@stanford.edu](mailto:dghosef@stanford.edu)
