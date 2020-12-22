@@ -1,3 +1,5 @@
-layout: page
-title: "resume"
-permalink: /resume
+---
+title: Resume
+layout: template
+filename: resume.md
+--- 
