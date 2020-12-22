@@ -1,8 +1,13 @@
-## Welcome to GitHub Pages
+## Hi all
 
-You can use the [editor on GitHub](https://github.com/dghosef/dghosef.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+Joseph here. I enjoy making computers do cool stuff, watching/playing soccer(go Southampton!), playing the piano and guitar, and messing around with my two wonderful dogs. I'm currently studying computer science at Stanford University.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Projects
+[comper]
+
+## Contact
+
+My email is jdtan638@gmail.com
 
 ### Markdown
 
