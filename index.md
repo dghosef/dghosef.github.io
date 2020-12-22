@@ -18,7 +18,7 @@ The dotfiles for my Arch Linux setup that I spent way too long messing around wi
 Back in High School, I took a bunch of stories of people making funny mistakes from [r/tifu](https://reddit.com/r/tifu), compiled them into a book(with permission of the original authors of course) and self-published it onto Amazon under the penname Benjamin Success. Its sales numbers have been abysmal, but now I can say I am a published author, which is a win in my books.
 
 ### [The robotics team I started](https://heritage-schools.org/academics/robotics/)
-I founded this VEX robotics team a few years back and taught a variety of STEM topics to high schoolers. I had a blast working with the team. I am not nearly as active in the team as I was as I handed it off to one of the staff at the school, but I still help out from time to time.
+I founded this VEX robotics team a few years back and taught a variety of STEM topics to high schoolers. I had a blast working with the team. I am not nearly as active in the team anymore(I handed it off to one of the staff at the school) but I still help out from time to time.
 
 ## Contact
 The best way to contact me is at my email [dghosef@stanford.edu](mailto:dghosef@stanford.edu)
