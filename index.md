@@ -1,5 +1,5 @@
 ---
-title: Dghosef        
+title: Dghosef|Joseph Tan
 ---
 ## Hi all
 Joseph Tan here. I enjoy making computers do cool stuff, playing the piano and guitar, all things soccer, and messing around with my [two wonderful wiener dogs](dogs.jpg). I'm currently studying computer science at Stanford University. [Resume](resume.pdf)
