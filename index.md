@@ -14,5 +14,6 @@ Scrapes data from [fplreview](https://fplreview.com/) and uses linear programmin
 ### [dotfiles](https://github.com/dghosef/dotfiles)
 The dotfiles for my Arch Linux setup that I spent way too long messing around with. Includes my i3, (neo)vim, and tmux config files.
 
+### [tifu](https://www.amazon.com/TIFU-Mortifying-confessions-internet-community-ebook/dp/B081Z794ZD/ref=sr_1_1?dchild=1&keywords=tifu&qid=1608609736&s=books&sr=1-1)
 ## Contact
 The best way to contact me is at my email [dghosef@stanford.edu](mailto:dghosef@stanford.edu)

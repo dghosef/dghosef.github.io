@@ -4,9 +4,6 @@
 body {
     background-color: #121212;
 }
-$body-text-color: #FFFFFF;
-.text {
-    $opacity: .87;
-}
+$body-text-color: #D3D3D3
 
 @import "{{ site.theme }}";
