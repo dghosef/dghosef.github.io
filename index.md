@@ -7,7 +7,7 @@ Joseph Tan here. I enjoy making computers do cool stuff, playing the piano and g
 ## Technical Projects
 
 ### [Comper](https://github.com/dghosef/comper)
-An automatic backing track generator for jazz music. Takes in a style file using a custom context-free-grammar-like syntax file and a chord progression file and generates a midi file consisting of a walking bassline, comping with voice leading, and a simple drum track. [Github](https://github.com/dghosef/comper)
+An automatic backing track generator for jazz music. Takes in a style file using a custom context-free-grammar-like syntax file and a chord progression file and generates a midi file consisting of a walking bassline, comping with voice leading, and a simple drum track. [Samples](https://soundcloud.com/joseph-tan-486477918/sets/automatically-generated-backing-tracks) - [Github](https://github.com/dghosef/comper)
 
 ### [Fantasy Premier League Team Generator](https://github.com/dghosef/FPL-team-generator)
 Scrapes data from [fplreview](https://fplreview.com/) and uses linear programming to generate a Fantasy Premier League team. Currently a work in progress but should be ready by the start of next season. [Github](https://github.com/dghosef/FPL-team-generator)
