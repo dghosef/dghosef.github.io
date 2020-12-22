@@ -5,8 +5,10 @@ body {
     background-color: #121212;
 }
 .main-content {
-    h1 {
-        text-align: center;
+    h2 {
+        a {
+            text-decoration: underline;
+        }
     }
 }
 $body-text-color: #FFFFFFDE;
