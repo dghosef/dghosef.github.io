@@ -1,7 +1,9 @@
+# Joseph Tan
+
 ## Hi all
 Joseph Tan here. I enjoy making computers do cool stuff, playing the piano and guitar, all things soccer, and messing around with my two wonderful dogs. I'm currently studying computer science at Stanford University. [Here](resume.pdf) is a link to my resume.
 
-## Projects
+## Technical Projects
 
 ### [Comper](https://github.com/dghosef/comper)
 An automatic backing track generator for jazz music. Takes in a style file using a custom context-free-grammar-like syntax file and a chord progression file and generates a walking bassline, comping with voice leading, and a simple drum track.
@@ -9,7 +11,7 @@ An automatic backing track generator for jazz music. Takes in a style file using
 ### [Fantasy Premier League Team Generator](https://github.com/dghosef/FPL-team-generator)
 Scrapes data from [fplreview](https://fplreview.com/) and uses linear programming to generate an optimal Fantasy Premier League team. Currently a work in progress but should be ready by the start of next season.
 
-## Other cool stuff
+## Other Projects
 
 ### [Dotfiles](https://github.com/dghosef/dotfiles)
 The dotfiles for my Arch Linux setup that I spent way too long messing around with. Includes my i3, (neo)vim, and tmux config files.

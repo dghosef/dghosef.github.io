@@ -4,6 +4,11 @@
 body {
     background-color: #121212;
 }
+.main-content {
+    h1 {
+        text-align: center;
+    }
+}
 $body-text-color: #FFFFFFDE;
 
 @import "{{ site.theme }}";
