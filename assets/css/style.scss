@@ -7,3 +7,6 @@ body {
 $body-text-color: #FFFFFFDE;
 
 @import "{{ site.theme }}";
+.site-footer-credits {
+  color: #12121200;
+}
