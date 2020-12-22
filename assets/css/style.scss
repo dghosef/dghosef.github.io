@@ -2,7 +2,9 @@
 ---
 
 body {
-    background-color: #000000;
+    background-color: #121212;
 }
 $body-text-color: #FFFFFF;
+$opacity: 87;
+
 @import "{{ site.theme }}";
