@@ -25,4 +25,4 @@ I founded a VEX robotics team a few years back, managed to teach a variety of ST
 
 ## Connect
 Email: [dghosef@stanford.edu](mailto:dghosef@stanford.edu) \
-LinkedIn: [dghosef](https://www.linkedin.com/in/dghosef/)
+LinkedIn: [linkedin.com/in/dghosef](https://www.linkedin.com/in/dghosef/)
