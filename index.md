@@ -23,6 +23,6 @@ Back in High School, I took a bunch of stories of people making funny mistakes f
 ### [VEX Robotics](https://heritage-schools.org/academics/robotics/)
 I founded a VEX robotics team a few years back, managed to teach a variety of STEM topics to high school students(coding, practical physics, etc), and had a blast. I am not nearly as active in the team anymore(I handed it off to one of the staff at the school) but I still help out from time to time. [Team Website](https://heritage-schools.org/academics/robotics/)
 
-## Contact
+## Connect
 Email: [dghosef@stanford.edu](mailto:dghosef@stanford.edu) \
 LinkedIn: [dghosef](https://www.linkedin.com/in/dghosef/)
