@@ -155,7 +155,7 @@ the kinks. First, credit where credit is due
         		  a_strengths = new_a_strengths
         		  d_strengths = new_d_strengths
         	 return d_strengths, a_strengths
-	'''python
+	'''
     
     The initial idea was that attacking and defensive strengths would
     converge after enough iterations. In reality, they often
