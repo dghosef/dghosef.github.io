@@ -18,7 +18,7 @@ Subs:
 
 (Starters and subs would change depending on fixtures. I ran the
 algorithm and picked the team a few days ago. The output if you run
-the algorithm now is a bit different, but I kept this team becuase
+the algorithm now is a bit different, but I kept this team because
 I already made the transfers and wanted the team on this post to be
 the same as my actual team)
 
@@ -42,7 +42,7 @@ the kinks. First, credit where credit is due
 -   [Excellent guide for linear programming with Python/PuLP for FPL](https://medium.com/@joseph.m.oconnor.88/linearly-optimising-fantasy-premier-league-teams-3b76e9694877)
 -   [Tutorial for accessing the FPL API with python that helped quite a bit](https://medium.com/@conalldalydev/how-to-get-fantasy-premier-league-data-using-python-f99f50ab0da)
     
-    Warning: The rest of this post constains a lot of technical
+    Warning: The rest of this post contains a lot of technical
     details. I don't blame you if you want to skip the rest. However,
     the math isn't that complex(lots of multiplication and division)
     and the programming section isn't that long and is entirely
@@ -67,7 +67,7 @@ the kinks. First, credit where credit is due
     2.  Calculate how involved each player is in their team's assists and goals as a percentage
     3.  From step 1 and 2, predict the number of goals/assists of each player
     4.  If the player is a gk, def, or mid, calculate probability of keeping a cs in each game
-    5.  If the player is a gk or def, calculate the probability of conceeding 2+ goals
+    5.  If the player is a gk or def, calculate the probability of conceding 2+ goals
     6.  If the player is a gk, try to predict number of saves
     7.  From the above data, try to predict bonus points
     8.  Convert the predicted goal values, assist values, etc into a predicted fpl score
@@ -81,26 +81,26 @@ the kinks. First, credit where credit is due
     u/blubbersassafras for his writeup on a similar process(see
     above). In order to find the relative strength of any given team,
     the program loops through that team's past few scores and
-    compares how many goals that team conceeded and scored compared
+    compares how many goals that team conceded and scored compared
     to how the average team would have fared. For example, let's say
     team A beat team B 2-1 where team B is a fairly average team and
     we want to find team A's attacking and defensive strength. In
     order to find team A's relative attacking strength from this
     game, the program compares the number of goals team A scored to
     the number of goals the average team would score. Since team B is
-    a fairly average team and the average team conceeds 1.36
+    a fairly average team and the average team concedes 1.36
     goals/game, team A outperformed the average by 2/1.36, so its
     attacking strength is 2/1.36. However, if team B had a defense
     that was half as good as the average team(d. strength = 2), you
     would expect the average team to score 1.36 \* 2 or 2.72
     goals. Since team A only scored 2 goals, team A only has an
     attacking strength of roughly 2/2.72. Likewise, the defensive
-    strength of team A is 1/1.36 since the average team would conceed
+    strength of team A is 1/1.36 since the average team would concede
     1.36 goals/game against team B's average attack but team A only
-    conceeded 1(recall that lower defensive strengths and higher
+    conceded 1(recall that lower defensive strengths and higher
     attacking strengths indicate a stronger team). If team B had an
     attack that was half as good as average(a. strength = 0.5), the
-    average team would be expected to conceed 0.5 \* 1.36 or .68
+    average team would be expected to concede 0.5 \* 1.36 or .68
     goals. Therefore, team A's defensive strength in this scenario
     would be 1 / 0.68 which is worse than average.
     
@@ -167,38 +167,35 @@ the kinks. First, credit where credit is due
     value of convergence. In my actual implementation, I max out the
     defensive and offensive strength of each game to be 3 so as to
     remove the impact of outliers like WBA scoring against MCI who
-    hadn't conceeded in a month and the 7-2 AVL-LIV game. Also, in my
+    hadn't conceded in a month and the 7-2 AVL-LIV game. Also, in my
     implementation, the past 10 gameweeks are considered where the 5
     most recent fixtures are weighted twice as heavily as the other 5
-    fixtures. See the team<sub>strengths</sub> function at the top of
-    [predict<sub>points.py</sub>](https://github.com/dghosef/FPL-team-generator/blob/main/src/predict_points.py) for the actual implementation. Once we have
+    fixtures. See the team_strengths function at the top of
+    [predict_points.py](https://github.com/dghosef/FPL-team-generator/blob/main/src/predict_points.py) for the actual implementation. Once we have
     each team's strength, we can predict any score. The formula for
     the score is
     
-    avg<sub>goals</sub> = 1.36
-    (team1 goals, team2 goals) = (avg<sub>goals</sub> \* team1<sub>a</sub><sub>strength</sub> \* team2<sub>d</sub><sub>strength</sub>, avg<sub>goals</sub> \* team2<sub>a</sub><sub>strength</sub> \* team1<sub>d</sub><sub>strength</sub>)
+    avg_goals = 1.36
+    (team1 goals, team2 goals) = (avg_goals \* team1_a_strength \* team2_d_strength, avg_goals \* team2_a_strength \* team1_d_strength)
     
-    The rest of point prediction is fairly straightforward. As many
-    of you know, FPL provides their own custom statistics entitled
-    creativity and threat, where 100 creativity roughly corresponds
-    to 1 assist and 100 threat roughly corresponds to 1 goal. [Here](https://www.facebook.com/832058563619842/posts/how-ict-influence-creativity-threat-index-is-calculatedinfluence-evaluates-the-d/1113864845439211/) is
-    a link to a breakdown of how the calculation works(the linked
-    post doesn't cite any sources so I'm not completely sure how
-    accurate it is, though it shouldn't be too hard to verify by
-    comparing the actual creativity/threat values to what the formula
-    in the post predicts they would be). In order to calculate the
-    number of goals a player is going to score, we calculate that
-    player's threat per minute(tpm) and their team's overall threat
-    per minute over the last 10 games. Then we figure out the
-    expected goals their team is going to score in a game using the
-    score formula above and apply the formula
+    The rest of point prediction is fairly straightforward. As many of
+    you know, FPL provides their own custom statistics entitled
+    creativity and threat, where 100 creativity roughly corresponds to
+    1 assist and 100 threat roughly corresponds to 1
+    goal. [Here](https://www.facebook.com/832058563619842/posts/how-ict-influence-creativity-threat-index-is-calculatedinfluence-evaluates-the-d/1113864845439211/)
+    is a link to a breakdown of how the calculation works. In order to
+    calculate the number of goals a player is going to score, we
+    calculate that player's threat per minute(tpm) and their team's
+    overall threat per minute over the last 10 games. Then we figure
+    out the expected goals their team is going to score in a game
+    using the score formula above and apply the formula
     
-    predicted<sub>goals</sub><sub>player</sub> = (player<sub>tpm</sub>/team<sub>tpm</sub>) \* predicted<sub>goals</sub><sub>team</sub>
+    predicted_goals_player = (player_tpm/team_tpm) \* predicted_goals_team
     
     We do the same process to figure out assists but with creativity
     per minute(cpm) so that
     
-    expected assists = (player<sub>cpm</sub>/team<sub>cpm</sub>) \* expected<sub>goals</sub> \* .75
+    expected assists = (player_cpm/team_cpm) \* expected_goals \* .75
     
     I multiply by .75 because I'd estimate roughly 25% of goals don't
     have an assist. 
@@ -207,14 +204,14 @@ the kinks. First, credit where credit is due
     here is a quick overview of the highlights
     
     -   We can use the poisson distribution formula to get probability of cleansheet = e<sup>(-predicted goals conceeded)</sup>
-    -   The poisson distribution formula is also used to find probability of opposition scoring 2+ goals(calcualte the probability of each score and then add up the probabilities of each score where the opposition scores 2+ goals)
+    -   The poisson distribution formula is also used to find probability of opposition scoring 2+ goals(calculate the probability of each score and then add up the probabilities of each score where the opposition scores 2+ goals)
     -   Goalkeeper save count is predicted by looking at their saves/opposition attacking strength/game over the last 10 games and then multiplying by new opposition attacking strength
     -   Bonus points are calculated by dividing the number of bps of a player(found using the [official bps formula and the previously calculated stats](https://www.premierleague.com/news/106533)) by 16
         -   I chose 16 because the average number of predicted bonus points when I use 16 is quite close to the real life average
     -   Points are found using multiplication. 2 points are added for playing time
         -   For example, if Ings, has 1.2 predicted goals and 0.23 predicted assists, his point value is 1.2\*4 + .23\*3 + 2
-    -   Players who have played less than 240 mins over the last 4 games have their point value overriden to 0 as they aren't considered a regular starter
-    -   Players who are marked as 25%, 50%, and 75% have their point values multiplied accordingly(see the [get<sub>data</sub> function](https://github.com/dghosef/FPL-team-generator/blob/main/src/pick_team.py))
+    -   Players who have played less than 240 mins over the last 4 games have their point value overridden to 0 as they aren't considered a regular starter
+    -   Players who are marked as 25%, 50%, and 75% have their point values multiplied accordingly(see the [get_data function](https://github.com/dghosef/FPL-team-generator/blob/main/src/pick_team.py))
     -   Players who are suspended and have long term injuries have their point values modified accordingly
 
 2.  Team selection
