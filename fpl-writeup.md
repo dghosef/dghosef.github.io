@@ -1,3 +1,8 @@
+---
+title: "fpl-writeup"
+permalink: /fpl-writeup/
+---
+
 # My FPL Team Generator
 
 
