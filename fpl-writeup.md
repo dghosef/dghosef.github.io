@@ -50,12 +50,6 @@ the kinks. First, credit where credit is due
     the math isn't that complex(lots of multiplication and division)
     and the programming section isn't that long and is entirely
     skippable.
-    
-    Also, I don't have much of a math/stats background, so forgive me
-    if you notice any mistakes. I'd appreciate it if you commented
-    any mistakes or suggestions, either in the code, conceptually, or
-    in my explanation so I can improve this for next season.
-
 
 ## Algorithm overview
 
