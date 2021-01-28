@@ -173,6 +173,7 @@ the kinks. First, credit where credit is due
     the score is
     
     avg_goals = 1.36
+	
     (team1 goals, team2 goals) = (avg_goals \* team1_a_strength \* team2_d_strength, avg_goals \* team2_a_strength \* team1_d_strength)
     
     The rest of point prediction is fairly straightforward. As many of
