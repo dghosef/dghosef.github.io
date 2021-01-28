@@ -10,7 +10,7 @@ Joseph Tan here. I enjoy making computers do cool stuff, playing the piano and g
 An automatic backing track generator for jazz music. Takes in a style file using a custom context-free-grammar-like syntax file and a chord progression file and generates a midi file consisting of a walking bassline, comping with voice leading, and a simple drum track. [Samples](https://soundcloud.com/joseph-tan-486477918/sets/automatically-generated-backing-tracks) - [Github](https://github.com/dghosef/comper)
 
 ### [Fantasy Premier League Team Generator](https://github.com/dghosef/FPL-team-generator)
-Models and predicts player performances(goals, assists, clean sheets) using data from the official Fantasy Premier League API and uses linear programming and a point prediction algorithm I developed to generate a Fantasy Premier League team. Currently a work in progress but should be ready by the start of next season. [Github](https://github.com/dghosef/FPL-team-generator) - [Detailed Explanation](https://www.reddit.com/r/FantasyPL/comments/kuxw0m/fpl_teach_an_automated_fpl_team_selection/)
+Models and predicts player performances(goals, assists, clean sheets) using data from the official Fantasy Premier League API and uses linear programming and a player/team performance modeling algorithm I developed to generate a Fantasy Premier League team. [Github](https://github.com/dghosef/FPL-team-generator) - [Detailed Explanation](https://www.reddit.com/r/FantasyPL/comments/kuxw0m/fpl_teach_an_automated_fpl_team_selection/)
 
 ## Other Projects
 
