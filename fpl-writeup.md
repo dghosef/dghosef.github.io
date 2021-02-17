@@ -6,26 +6,6 @@ permalink: /fpl-writeup/
 # My FPL Team Generator
 
 
-## TLDR
-
-I wrote an FPL team generator. Its suggestion for the optimal team from gw18-gw28 is:
-
--   Pope
--   Cancelo - Dias - Walker-Peters - Bednarek
--   De Bruyne - Fernandes - Rashford - Grealish - El Ghazi
--   Martial
-
-Subs:
-
--   Rodrigo - Brewster - Hause
-
-(Starters and subs would change depending on fixtures. I ran the
-algorithm and picked the team a few days ago. The output if you run
-the algorithm now is a bit different, but I kept this team because
-I already made the transfers and wanted the team on this post to be
-the same as my actual team)
-
-[Github repo here](https://github.com/dghosef/FPL-team-generator)
 
 
 ## Intro
@@ -45,12 +25,6 @@ the kinks. First, credit where credit is due
 -   [Excellent guide for linear programming with Python/PuLP for FPL](https://medium.com/@joseph.m.oconnor.88/linearly-optimising-fantasy-premier-league-teams-3b76e9694877)
 -   [Tutorial for accessing the FPL API with python that helped quite a bit](https://medium.com/@conalldalydev/how-to-get-fantasy-premier-league-data-using-python-f99f50ab0da)
     
-    Warning: The rest of this post contains a lot of technical
-    details. I don't blame you if you want to skip the rest. However,
-    the math isn't that complex(lots of multiplication and division)
-    and the programming section isn't that long and is entirely
-    skippable.
-
 ## Algorithm overview
 
 1.  Player Points Prediction
@@ -77,38 +51,38 @@ the kinks. First, credit where credit is due
     better). Again, a lot of the credit for this part goes to
     u/blubbersassafras for his writeup on a similar process(see
     above). In order to find the relative strength of any given team,
-    the program loops through that team's past few scores and
-    compares how many goals that team conceded and scored compared
-    to how the average team would have fared. For example, let's say
-    team A beat team B 2-1 where team B is a fairly average team and
-    we want to find team A's attacking and defensive strength. In
-    order to find team A's relative attacking strength from this
-    game, the program compares the number of goals team A scored to
-    the number of goals the average team would score. Since team B is
-    a fairly average team and the average team concedes 1.36
-    goals/game, team A outperformed the average by 2/1.36, so its
-    attacking strength is 2/1.36. However, if team B had a defense
-    that was half as good as the average team(d. strength = 2), you
-    would expect the average team to score 1.36 \* 2 or 2.72
-    goals. Since team A only scored 2 goals, team A only has an
-    attacking strength of roughly 2/2.72. Likewise, the defensive
-    strength of team A is 1/1.36 since the average team would concede
-    1.36 goals/game against team B's average attack but team A only
-    conceded 1(recall that lower defensive strengths and higher
-    attacking strengths indicate a stronger team). If team B had an
-    attack that was half as good as average(a. strength = 0.5), the
-    average team would be expected to concede 0.5 \* 1.36 or .68
-    goals. Therefore, team A's defensive strength in this scenario
-    would be 1 / 0.68 which is worse than average.
+    the program loops through that team's past few scores and compares
+    the number of goals that team conceded and scored to how an
+    average team would have fared. For example, let's say team A beat
+    team B 2-1 where team B is a fairly average team and we want to
+    find team A's attacking and defensive strength. In order to find
+    team A's relative attacking strength from this game, the program
+    compares the number of goals team A scored to the number of goals
+    the average team would score. Since team B is a fairly average
+    team and the average team concedes 1.36 goals/game, team A
+    outperformed the average by 2/1.36, so its attacking strength is
+    2/1.36. However, if team B had a defense that was half as good as
+    the average team(d. strength = 2), you would expect the average
+    team to score 1.36 \* 2 or 2.72 goals. Since team A only scored 2
+    goals, team A only has an attacking strength of roughly
+    2/2.72. Likewise, the defensive strength of team A is 1/1.36 since
+    the average team would concede 1.36 goals/game against team B's
+    average attack but team A only conceded 1(recall that lower
+    defensive strengths and higher attacking strengths indicate a
+    stronger team). If team B had an attack that was half as good as
+    average(a. strength = 0.5), the average team would be expected to
+    concede 0.5 \* 1.36 or .68 goals. Therefore, team A's defensive
+    strength in this scenario would be 1 / 0.68 which is worse than
+    average.
     
     Each team's attacking and defensive strength is initially set to
     equal 1(the average) and this calculation is performed for each
     team's last few games and averaged to find a total attacking and
     defensive score. This process is then repeated, this time using
-    the previously calculated strengths in order to get a
-    better picture of the opponent's level when assessing each
-    score. And then it's repeated again using the new strengths from
-    that calculation. And so on and so forth. I included some
+    the previously calculated strengths in order to get a better
+    picture of the opponent's level when assessing each score. And
+    then it's repeated again using the new strengths from that
+    calculation. And so on and so forth. I have included some
     python-esque pseudocode that shows the process in a bit more
     detail.
     
@@ -254,14 +228,12 @@ the kinks. First, credit where credit is due
 -   The bonus point algorithm doesn't account for bps magnets/repellants. It also assumes bonus points scales linearly with bps which isn't that accurate.
 -   There's probably a better way to guess who is going to start and or maybe estimate a probability of each player starting.
 -   It probably wouldn't take too much effort to modify the team selection to make an anti-fantasy-premier-league team which would be an interesting experiment
--   I also plan to modify the algorithm to build a hivemind team which tries to optimize the percent selected amount to build the most popular team(I'm sure some has already done this though) as a comparison
--   Probably a lot more that I didn't think of or meant to remember but forgot(I had a lot of moments where I was like "oh I can improve xyz" while working on this that I'm sure I forgot)
 
- If you want to track my progress, I have an fpl team(team id 7742703) that I plan
-to keep updating with the algorithm's choices as the season passes. It
-currently is on negative points because I took a lot of hits while
-experimenting. My hope is to iron out the kinks for next season.  I
+ If you want to track my progress, I have an fpl team(team id 7742703)
+that I plan to keep updating with the algorithm's choices as the
+season passes. My hope is to iron out the kinks for next season.  I
 left out a number of details because this post is already sort of
-long, but feel free to check out the [github](https://github.com/dghosef/FPL-team-generator/blob/main/src/pick_team.py) and leave any
-feedback/questions.
+long, but feel free to check out the
+[github](https://github.com/dghosef/FPL-team-generator/blob/main/src/pick_team.py)
+and leave any feedback/questions.
 
