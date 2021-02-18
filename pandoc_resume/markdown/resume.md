@@ -3,7 +3,7 @@ Joseph Tan
 
 ----
 
-> <jdtan638@gmail.com> • +1 (626) 693 6386 • [www.dghosef.me](https://www.dghosef.me)
+> <jdtan638@gmail.com> • +1 (626) 693 6386 • [https://dghosef.me](https://dghosef.me)
 
 ----
 
