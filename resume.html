@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  /* h1:hover { */
+  /*     background-color: #757575; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  /* h2:hover { */
+  /*     background-color: #397249; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      font-weight: bold;
+  }
+  dd {
+      margin-left: 17%;
+      margin-bottom:7px;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+
+  table {
+      width: 100%;
+  }
+  </style>
+</head>
+<body>
+<h1 id="joseph-tan">Joseph Tan</h1>
+<hr />
+<blockquote>
+<p><a href="mailto:jdtan638@gmail.com" class="email">jdtan638@gmail.com</a> • +1 (626) 693 6386 • <a href="https://www.dghosef.me" target="_blank">www.dghosef.me</a></p>
+</blockquote>
+<hr />
+<h2 id="education">Education</h2>
+<dl>
+<dt>Stanford</dt>
+<dd><p><strong>B.S. Computer Science</strong> <em>2020-2024(expected)</em></p>
+<p>Current GPA - 3.91/4.0</p>
+</dd>
+</dl>
+<p><strong>Relevant Coursework</strong>  <br />
+CS106B Programming Abstractions(A-): <em>C++, Recursion, Data Structures, Object Orientated Programming</em></p>
+<p>CS103 Mathematical Foundations of Computing(A): <em>Discrete Mathematics, Formal Language Theory, Finite Automata, Regex, Complexity Theory</em></p>
+<p>CS107E Computer Systems from the Ground Up(in progress): <em>Bare metal programming, I/O, ARM Assembly, C, Interrupts</em></p>
+<h2 id="technical-projects">Technical Projects</h2>
+<dl>
+<dt><strong>Comper</strong></dt>
+<dd><p>C++ Jazz backing track generator from chord progression and context-free-grammar based style file</p>
+<ul>
+<li>Generates a drum track, a walking bassline, and piano chord playing with jazz voicings</li>
+<li>Implemented grammar parser, music generation logic, midi file generation, and music-specific data structures</li>
+</ul>
+</dd>
+<dt><strong>FPL Team Generator</strong></dt>
+<dd><p>Python Fantasy Premier League(FPL) team selection algorithm(<a href="https://dghosef.me/fpl-writeup" target="_blank">dghosef.me/fpl-writeup</a>)</p>
+<ul>
+<li>Scraped soccer player statistics from the FPL API and saved in Pandas dataframe</li>
+<li>Developed algorithm to predict player future performances based on past performances, upcoming fixture difficulty, etc</li>
+<li>Fed predictions into linear programming solver to maximize predicted future performance levels under constraints of FPL rules</li>
+</ul>
+</dd>
+</dl>
+<h2 id="experience">Experience</h2>
+<dl>
+<dt><strong>Research Assistant</strong></dt>
+<dd><p>UCLA Micro and Nano Manufacturing Lab <em>(June 2017 - August 2017)</em></p>
+<ul>
+<li>Built custom high-resultion DXF to PDF file converter for circuit manufacturing website</li>
+<li>Helped write code to inteface a boat speedometer with a laptop for laboratory experiments</li>
+</ul>
+</dd>
+<dt><strong>Robotics Team Founder</strong></dt>
+<dd><p>Founded high school VEX robotics team</p>
+<ul>
+<li>Taught STEM topics(basic programming, practical physics, etc) to high school students</li>
+<li>Developed website, started team, raised funding</li>
+</ul>
+</dd>
+</dl>
+<h2 id="skills">Skills</h2>
+<p><strong>Languages(Proficient):</strong> C, C++, Python<br />
+<strong>Languages(Familiar):</strong> ARM Assembly, Lisp<br />
+</p>
+</body>
+</html>
