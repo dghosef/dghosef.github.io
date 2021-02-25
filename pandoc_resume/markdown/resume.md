@@ -3,24 +3,27 @@ Joseph Tan
 
 ----
 
-> U.S. Citizen | +1 (626) 693 6386 | **Email:** <jdtan638@gmail.com> \
+> U.S. Citizen | (626) 693 6386 | **Email:** <jdtan638@gmail.com> \
 > **Github:** [github.com/dghosef](https://github.com/dghosef) | **Linkedin:** [linkedin.com/in/dghosef](https:linkedin.com/in/dghosef) | **Website:** [www.dghosef.me](https://dghosef.me)\
 
 ----
 
+> **Proficient in** C, C++, Python; **Familiar with** ARM Assembly, Lisp
+
+
 Education
 ---------
 
-**Stanford** B.S. Computer Science *2020-2024(expected)*
+**Stanford B.S. Computer Science** *August 2020-June 2024(expected)*
 
-Current GPA - 3.91/4.0
+Current Cumulative GPA - 3.91/4.0
 
 **Relevant Coursework** \
 CS106B Programming Abstractions(A-): *C++, Recursion, Data Structures, Object Orientated Programming*
 
 CS103 Mathematical Foundations of Computing(A): *Discrete Mathematics, Formal Language Theory, Finite Automata, Regex, Complexity Theory*
 
-CS107E Computer Systems from the Ground Up(in progress): *Bare metal programming, I/O, ARM Assembly, C, Driver Development, Interrupts*
+CS107E Computer Systems from the Ground Up(in progress): *I/O, ARM Assembly, Bare Metal C, Driver Development, Interrupts*
 
 Experience
 --------------------
@@ -29,35 +32,30 @@ Experience
 
 UCLA Micro and Nano Manufacturing Lab *(June 2017 - August 2017)*
 
-* Built custom high-resultion DXF to PDF file converter for circuit manufacturing website
-* Helped write code to inteface a boat speedometer with a laptop for laboratory experiments
+* Built high-resolution DXF to PDF file converter for circuit manufacturing website
+* Helped create interface between laptop and boat speedometer for lab experiments
 
 **Robotics Team Founder**
 
 Founded high school VEX robotics team
 
 * Taught STEM topics(basic programming, practical physics, etc) to high school students
-* Developed website, started team, raised funding
+* Started team, mentored students, developed website, raised funding
 
 Technical Projects
 ----------
 
-**Comper**
+**Comper*(C++)***
 
-C++ Jazz backing track generator from chord progression and context-free-grammar based style file
+Jazz backing track generator from chord progression and context-free-grammar based style file
 
 * Generates a drum track, a walking bassline, and piano chord playing with jazz voicings
 * Implemented grammar parser, music generation logic, midi file generation, and music-specific data structures
 
-**FPL Team Generator**
+**FPL Team Generator*(Python)***
 
-Python Fantasy Premier League(FPL) team selection algorithm([dghosef.me/fpl-writeup](https://dghosef.me/fpl-writeup))
+Fantasy Premier League(FPL) team selection algorithm([dghosef.me/fpl-writeup](https://dghosef.me/fpl-writeup))
 
 * Scraped soccer player statistics from the FPL API and saved in Pandas dataframe
-* Developed algorithm to predict player future performances based on past performances, upcoming fixture difficulty, etc
-* Fed predictions into linear programming solver to maximize predicted future performance levels under constraints of FPL rules
-
-Languages
---------------------
-**Languages(Proficient):** C, C++, Python \
-**Languages(Familiar):** ARM Assembly, Lisp \
+* Developed algorithm to predict future player performances based on past performances, upcoming fixture difficulty, etc
+* Utilized linear programming solver to maximize predicted future performance levels under constraints of FPL rules to build team
