@@ -4,7 +4,7 @@ Joseph Tan
 ----
 
 > U.S. Citizen | (626) 693 6386 | **Email:** <jdtan638@gmail.com> \
-> **Github:** [github.com/dghosef](https://github.com/dghosef) | **Linkedin:** [linkedin.com/in/dghosef](https:linkedin.com/in/dghosef) | **Website:** [www.dghosef.me](https://dghosef.me)\
+> **Github:** [github.com/dghosef](https://github.com/dghosef) | **Linkedin:** [linkedin.com/in/dghosef](https:linkedin.com/in/dghosef) | **Website:** [dghosef.me](https://dghosef.me)\
 
 ----
 
