@@ -14,7 +14,7 @@ Joseph Tan
 Education
 ---------
 
-**Stanford B.S. Computer Science** *August 2020-June 2024(expected)*
+**Stanford B.S. Computer Science** *2020-2023(expected)*
 
 Current Cumulative GPA - 3.91/4.0
 
