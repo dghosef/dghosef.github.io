@@ -65,4 +65,4 @@ Fantasy Premier League(FPL) team selection algorithm([dghosef.me/fpl-writeup](ht
 Gameboy emulator running in a baremetal environment
 
  * Executes Gameboy ROMs by emulating the Gameboy CPU, GPU, Interrupt mechanism, and I/O
-* Runs in baremetal(OS-free) Raspberry Pi environment with custom controller driver, use of GPIO interrupts, and framebuffer manipulation
+* Runs in baremetal(OS-free) Raspberry Pi environment with custom controller driver, use of GPIO interrupts, and manual framebuffer manipulation
