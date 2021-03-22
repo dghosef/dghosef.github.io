@@ -59,3 +59,10 @@ Fantasy Premier League(FPL) team selection algorithm([dghosef.me/fpl-writeup](ht
 * Scraped soccer player statistics from the FPL API and saved in Pandas dataframe
 * Developed algorithm to predict future player performances based on past performances, upcoming fixture difficulty, etc
 * Utilized linear programming solver to maximize predicted future performance levels under constraints of FPL rules to build team
+
+**Berryboy*(C)*** 
+
+Gameboy emulator running in a baremetal environment
+
+ * Executes Gameboy ROMs by emulating the Gameboy CPU, GPU, Interrupt mechanism, and I/O
+* Runs in baremetal(OS-free) Raspberry Pi environment with custom controller driver, use of GPIO interrupts, and framebuffer manipulation
