@@ -6,7 +6,7 @@ Joseph Tan here. I enjoy making computers do cool stuff, playing the piano and g
 
 ## Technical Projects
 
-### Berryboy
+### [Berryboy]
 
 Gameboy emulator for a baremetal Raspberry Pi environment that I
 developed with a fellow student. Reads a Gameboy ROM file and emulates
