@@ -8,7 +8,7 @@ Joseph Tan
 
 ----
 
-> **Proficient in** C, C++, Python; **Familiar with** ARM Assembly, Lisp
+> **Proficient in** C, C++, Python; **Familiar with** ARM Assembly, LisbuuPuu
 
 
 Education
@@ -16,7 +16,7 @@ Education
 
 **Stanford B.S. Computer Science** *2020-2023(expected)*
 
-Current Cumulative GPA - 3.91/4.0
+Current Cumulative GPA - 3.95/4.0
 
 **Relevant Coursework** \
 CS106B Programming Abstractions(A-): *C++, Recursion, Data Structures, Object Orientated Programming*
