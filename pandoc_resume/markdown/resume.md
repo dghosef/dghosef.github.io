@@ -8,7 +8,7 @@ Joseph Tan
 
 ----
 
-> **Proficient in** C, C++, Python; **Familiar with** ARM Assembly, LisbuuPuu
+> **Proficient in** C, C++, Python; **Familiar with** ARM Assembly, Lisp
 
 
 Education
@@ -24,6 +24,10 @@ CS106B Programming Abstractions(A-): *C++, Recursion, Data Structures, Object Or
 CS103 Mathematical Foundations of Computing(A): *Discrete Mathematics, Formal Language Theory, Finite Automata, Regex, Complexity Theory*
 
 CS107E Computer Systems from the Ground Up(A): *I/O, ARM Assembly, Bare Metal C, Driver Development, Interrupts*
+
+CS143 Compilers(in progress): *Compiler Implementation, Lexing, Parsing, Semantic Analysis, Intermediate Representations, Code Generation*
+
+CS111 Operating Systems(in progress): *Concurrency, Synchronization, Scheduling, Processes, Virtual Memory, File Systems*
 
 Experience
 --------------------
