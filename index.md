@@ -24,7 +24,7 @@ An automatic backing track generator for jazz music. Takes in a style
 file using a custom context-free-grammar-like syntax file and a chord
 progression file and generates a midi file consisting of a walking
 bassline, comping with voice leading, and a simple drum track.
-[Samples](https://soundcloud.com/joseph-tan-486477918/sets/automatically-generated-backing-tracks) - [Github](https://github.com/dghosef/comper)
+[Audio Samples](https://soundcloud.com/joseph-tan-486477918/sets/automatically-generated-backing-tracks) - [Github](https://github.com/dghosef/comper)
 
 ### [Fantasy Premier League Team Generator](https://github.com/dghosef/FPL-team-generator)
 
