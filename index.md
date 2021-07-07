@@ -39,12 +39,6 @@ Writeup](fpl-writeup)
 
 ## Other Projects
 
-### [Dotfiles](https://github.com/dghosef/dotfiles)
-
-The dotfiles for my NixOS setup that I spend way too much time messing
-around with. Includes configuration.nix and home-manager files for i3,
-emacs, vim, etc and should be reproducible on most systems with a few
-tweaks. [Github](https://github.com/dghosef/dotfiles)
 
 ### [TIFU](https://www.amazon.com/TIFU-Mortifying-confessions-internet-community-ebook/dp/B081Z794ZD/ref=sr_1_1?dchild=1&keywords=tifu&qid=1608609736&s=books&sr=1-1)
 
