@@ -17,6 +17,11 @@ progress, and currently only runs Tetris. I plan to add support for
 more games, ability to run Gameboy Color games, and make it
 cross-platform.
 
+### [Julia Programming Language](https://github.com/JuliaLang/julia)
+
+A few other members of the Julia community and I added support for
+callsite inline/noinline annotations to the Julia compiler. This
+allows for finer control over optimizations when writing Julia programs.
 
 ### [Comper](https://github.com/dghosef/comper)
 
