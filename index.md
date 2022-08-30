@@ -2,9 +2,20 @@
 title: Home
 ---
 ## Hi all
-Joseph Tan here. I enjoy making computers do stuff, playing the piano and guitar, all things soccer, and messing around with my [two wonderful sausage dogs](dogs.jpg). I'm currently studying computer science at Stanford University.
+Joseph Tan here. I enjoy making computers do stuff, playing the piano and guitar, all things soccer, and messing around with my [two wonderful sausage dogs](dogs.jpg). I'm currently studying computer science at Stanford University where I also TA CS106A and CS106B.
 
 ## Technical Projects
+
+### [Driver-Language](https://github.com/dghosef/driver-language)
+Writing drivers is hard. The process often consists of reading dense
+documentation littered with errors and writing low level C. This project
+is a domain specific language designed to make driver development easier.
+The language itself has a simple - albeit limited - imperative core with
+variables, memory reads, and memory writes with which users can write drivers.
+In addition, users also provide a specification that the compiler checks the driver
+against. In the specification, the user can provide rules for things like the order in which
+registers have to be written and how to ensure that addresses can be properly written which are
+checked statically.
 
 ### [Berryboy](berryboy.jpg)
 
