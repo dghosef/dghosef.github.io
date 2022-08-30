@@ -11,7 +11,7 @@ A few other members of the Julia community and I added support for
 callsite inline/noinline annotations to the Julia compiler. This
 allows for finer control over optimizations when writing Julia programs.
 
-### PochiVM + TACO Compiler
+### [PochiVM + TACO Compiler](https://github.com/dghosef/zoomzoomtaco)
 [PochiVM](https://github.com/sillycross/PochiVM) is a research metaprogramming 
 JIT code-generation framework that comes with an extremely fast baseline compiler. 
 I rewrote the backend of the [Tensor Algebra Compiler(TACO)](http://tensor-compiler.org/)
