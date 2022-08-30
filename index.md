@@ -14,9 +14,7 @@ The language itself has a simple - albeit limited - imperative core with
 variables, memory reads, and memory writes with which users can write drivers.
 In addition, users also provide a specification that the compiler checks the driver
 against. In the specification, the user can provide rules for things like the order in which
-registers have to be written and how to ensure that addresses can be properly written which are
-checked statically.
-
+registers have to be written, and the compiler verifies that the driver follows those rules statically.
 ### [Berryboy](berryboy.jpg)
 
 Gameboy emulator for a baremetal Raspberry Pi environment that I
