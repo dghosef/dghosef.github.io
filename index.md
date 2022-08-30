@@ -16,8 +16,8 @@ allows for finer control over optimizations when writing Julia programs.
 JIT code-generation framework that comes with an extremely fast baseline compiler. 
 I rewrote the backend of the [Tensor Algebra Compiler(TACO)](http://tensor-compiler.org/)
 to use PochiVM and saw compilation performances of TACO increase by a factor of up to 100x.
-I then modified the baseline compiler so it recognized commonly occuring patterns in TACO's
-generated code and emitted specialized code for those. 
+I then modified the baseline compiler to recognize common patterns in TACO's generated code and
+specialize compilation for them.
 
 ## Technical Projects
 
