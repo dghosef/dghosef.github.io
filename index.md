@@ -17,7 +17,8 @@ JIT code-generation framework that comes with an extremely fast baseline compile
 I rewrote the backend of the [Tensor Algebra Compiler(TACO)](http://tensor-compiler.org/)
 to use PochiVM and saw compilation performances of TACO increase by a factor of up to 100x.
 I then modified the baseline compiler to recognize common patterns in TACO's generated code and
-specialize compilation for them.
+specialize compilation for them, allowing TACO to keep the benefits of the extremely fast baseline compiler
+while still retaining much of the performance of the generated code.
 
 ## Technical Projects
 
