@@ -4,6 +4,21 @@ title: Home
 ## Hi all
 Joseph Tan here. I enjoy making computers do stuff, playing the piano and guitar, all things soccer, and messing around with my [two wonderful sausage dogs](dogs.jpg). I'm currently studying computer science at Stanford University where I also TA CS106A and CS106B.
 
+## Open Source & Research Contributions
+
+### [Julia Programming Language](https://github.com/JuliaLang/julia)
+A few other members of the Julia community and I added support for
+callsite inline/noinline annotations to the Julia compiler. This
+allows for finer control over optimizations when writing Julia programs.
+
+### PochiVM + TACO Compiler
+[PochiVM](https://github.com/sillycross/PochiVM) is a research metaprogramming 
+JIT code-generation framework that comes with an extremely fast baseline compiler. 
+I rewrote the backend of the [Tensor Algebra Compiler(TACO)](http://tensor-compiler.org/)
+to use PochiVM and saw compilation performances of TACO increase by a factor of up to 100x.
+I then modified the baseline compiler so it recognized commonly occuring patterns in TACO's
+generated code and emitted specialized code for those. 
+
 ## Technical Projects
 
 ### [Driver-Language](https://github.com/dghosef/driver-language)
@@ -15,8 +30,8 @@ variables, memory reads, and memory writes with which users can write drivers.
 In addition, users also provide a specification that the compiler checks the driver
 against. In the specification, the user can provide rules for things like the order in which
 registers have to be written, and the compiler verifies that the driver follows those rules statically.
-### [Berryboy](berryboy.jpg)
 
+### [Berryboy](berryboy.jpg)
 Gameboy emulator for a baremetal Raspberry Pi environment that I
 developed with a fellow student. Reads a Gameboy ROM file and emulates
 the ppu(gpu), cpu, interrupt mechanism, and I/O. Because it runs on
@@ -26,14 +41,7 @@ progress, and currently only runs Tetris. I plan to add support for
 more games, ability to run Gameboy Color games, and make it
 cross-platform.
 
-### [Julia Programming Language](https://github.com/JuliaLang/julia)
-
-A few other members of the Julia community and I added support for
-callsite inline/noinline annotations to the Julia compiler. This
-allows for finer control over optimizations when writing Julia programs.
-
 ### [Comper](https://github.com/dghosef/comper)
-
 An automatic backing track generator for jazz music. Takes in a style
 file using a custom context-free-grammar-like syntax file and a chord
 progression file and generates a midi file consisting of a walking
