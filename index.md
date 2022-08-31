@@ -11,7 +11,7 @@ A few other members of the Julia community and I added support for
 callsite inline/noinline annotations to the Julia compiler. This
 allows for finer control over optimizations when writing Julia programs.
 
-### [PochiVM + TACO Compiler](https://github.com/dghosef/zoomzoomtaco)
+### [PochiVM + TACO Compiler](http://tensor-compiler.org/)
 [PochiVM](https://github.com/sillycross/PochiVM) is a research 
 JIT code-generation framework that comes with an extremely fast baseline compiler. 
 I rewrote the backend of the [Tensor Algebra Compiler(TACO)](http://tensor-compiler.org/)
@@ -29,36 +29,35 @@ is a domain specific language designed to make driver development easier.
 The language itself has a simple - albeit limited - imperative core with
 variables, memory reads, and memory writes with which users can write drivers.
 In addition, users also provide a specification that the compiler checks the driver
-against. In the specification, the user can provide rules for things like the order in which
+against. In the specification, the user can provide rules for properties drivers
+must have such as, for example, the order in which
 registers have to be written, and the compiler verifies that the driver follows those rules statically.
 
 ### [Berryboy](berryboy.jpg)
-Gameboy emulator for a baremetal Raspberry Pi environment that I
-developed with a fellow student. Reads a Gameboy ROM file and emulates
+A gameboy emulator for a baremetal Raspberry Pi environment that I
+developed with a fellow student. It reads a Gameboy ROM file and emulates
 the ppu(gpu), cpu, interrupt mechanism, and I/O. Because it runs on
-the Pi without an OS, I also had to develop drivers for the input and
-figure out how to manually write to the framebuffer. Still a work in
-progress, and currently only runs Tetris. I plan to add support for
-more games, ability to run Gameboy Color games, and make it
-cross-platform.
-
-### [Comper](https://github.com/dghosef/comper)
-An automatic backing track generator for jazz music. Takes in a style
-file using a custom context-free-grammar-like syntax file and a chord
-progression file and generates a midi file consisting of a walking
-bassline, comping with voice leading, and a simple drum track.
-[Audio Samples](https://soundcloud.com/joseph-tan-486477918/sets/automatically-generated-backing-tracks) - [Github](https://github.com/dghosef/comper)
+the Pi without an OS, it also comes with drivers for Raspberry Pi
+hardware such as GPIO and the framebuffer.
 
 ### [Fantasy Premier League Team Generator](https://github.com/dghosef/FPL-team-generator)
 
 Automated [Fantasy Premier League](https://fantasy.premierleague.com)
-team generation. Predicts English professional soccer player
+team generation. It predicts English professional soccer player
 performances using statistics from the official Premier League API and
 a player/team performance modeling algorithm I developed. With those
 predictions and the python [PuLP](https://pypi.org/project/PuLP/)
-linear programming library, assembles a Fantasy Premier League team.
+linear programming library, it assembles a Fantasy Premier League team.
 [Github](https://github.com/dghosef/FPL-team-generator) - [Detailed
 Writeup](fpl-writeup)
+
+
+### [Comper](https://github.com/dghosef/comper)
+An automatic backing track generator for jazz music. It takes in a style
+file using a custom context-free-grammar-like syntax file and a chord
+progression file and generates a midi file consisting of a walking
+bassline, comping with voice leading, and a simple drum track.
+[Audio Samples](https://soundcloud.com/joseph-tan-486477918/sets/automatically-generated-backing-tracks) - [Github](https://github.com/dghosef/comper)
 
 ## Other Projects
 
