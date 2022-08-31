@@ -54,7 +54,7 @@ Writeup](fpl-writeup)
 
 ### [Comper](https://github.com/dghosef/comper)
 An automatic backing track generator for jazz music. It takes in a style
-file using a custom context-free-grammar-like syntax file and a chord
+file that uses a custom context-free-grammar-like DSL and a chord
 progression file and generates a midi file consisting of a walking
 bassline, comping with voice leading, and a simple drum track.
 [Audio Samples](https://soundcloud.com/joseph-tan-486477918/sets/automatically-generated-backing-tracks) - [Github](https://github.com/dghosef/comper)
