@@ -62,19 +62,6 @@ bassline, comping with voice leading, and a simple drum track.
 ## Other Projects
 
 
-### [TIFU](https://www.amazon.com/TIFU-Mortifying-confessions-internet-community-ebook/dp/B081Z794ZD/ref=sr_1_1?dchild=1&keywords=tifu&qid=1608609736&s=books&sr=1-1)
-
-Back in High School, I took a bunch of stories of people making funny
-mistakes from [r/tifu](https://reddit.com/r/tifu), compiled them into
-a book(with the permission of the original authors of course), and
-self-published it onto Amazon under the pen name Benjamin Success. Its
-sales numbers have been abysmal, but now I can say I am a published
-author, which is a win in my books. All proceeds go to
-[GiveDirectly](https://www.givedirectly.org/), a charity that gives
-money directly to those in need in the USA and the nations of Kenya,
-Liberia, Malawi, and Kibera.
-[Amazon](https://www.amazon.com/TIFU-Mortifying-confessions-internet-community-ebook/dp/B081Z794ZD/ref=sr_1_1?dchild=1&keywords=tifu&qid=1608609736&s=books&sr=1-1)
-
 ### [VEX Robotics](https://heritage-schools.org/academics/robotics/)
 
 I founded a VEX robotics team a few years back, managed to teach a
