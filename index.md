@@ -23,8 +23,9 @@ still produces high performing kernels.
 ## Technical Projects
 
 ### [qdbp](http://qdbplang.org/)
-The perfect programming langauge.
-
+No general purpose programming language is perfect, but qdbp is as close as it gets
+in my (completely unbiased) opinion. It is simple, expressive, safe, and with
+a little more work can be relatively performant.
 
 ### [Driver-Language](https://github.com/dghosef/driver-language)
 Writing drivers is hard. The process often consists of reading dense
