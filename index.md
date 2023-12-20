@@ -2,7 +2,7 @@
 title: Home
 ---
 ## Hi all
-Joseph Tan here. I enjoy making computers do stuff, playing the piano and guitar, all things soccer, and messing around with my [two wonderful sausage dogs](dogs.jpg). I'm currently studying computer science at Stanford University where I also TA CS106A and CS106B.
+Joe here. I enjoy making computers do stuff, playing the piano and guitar, all things soccer, and messing around with my [two wonderful sausage dogs](dogs.jpg). I'm currently studying computer science at Stanford University where I also TA CS106A, CS106B, and CS140E.
 
 ## Open Source & Research Contributions
 
@@ -21,6 +21,10 @@ specialize compilation for them, allowing TACO to have an extremely fast baselin
 still produces high performing kernels.
 
 ## Technical Projects
+
+### [qdbp](http://qdbplang.org/)
+The perfect programming langauge.
+
 
 ### [Driver-Language](https://github.com/dghosef/driver-language)
 Writing drivers is hard. The process often consists of reading dense
@@ -59,7 +63,7 @@ progression file and generates a midi file consisting of a walking
 bassline, comping with voice leading, and a simple drum track.
 [Audio Samples](https://soundcloud.com/joseph-tan-486477918/sets/automatically-generated-backing-tracks) - [Github](https://github.com/dghosef/comper)
 
-## Other Projects
+## Other
 
 
 ### [VEX Robotics](https://heritage-schools.org/academics/robotics/)
@@ -70,6 +74,14 @@ physics, etc), and had a blast. I am not nearly as active in the team
 anymore(I handed it off to one of the staff at the school) but I still
 help out from time to time. [Team
 Website](https://heritage-schools.org/academics/robotics/)
+
+### Internships
+
+I've interned at [Roblox](https://www.roblox.com/) and [NASA JPL](https://www.jpl.nasa.gov/) in the past.
+At NASA, I developed language tooling(auto complete, syntax highlighting, error squiggles, etc) for 
+the [Ingenuity Helicopter](https://mars.nasa.gov/technology/helicopter/)'s command language. And at
+Roblox, I built a unit testing framework for the game engine tests and migrated the unit test suite
+over to my framework.
 
 ## Connect
 Email: [dghosef@stanford.edu](mailto:dghosef@stanford.edu) \
