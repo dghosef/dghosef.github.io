@@ -1,6 +1,7 @@
 Joseph Tan
 ============
-
+Website is a WIP
+<!---
 ----
 
 > U.S. Citizen | (626) 693 6386 | **Email:** <dghosef@stanford.edu> \
@@ -70,3 +71,4 @@ Fantasy Premier League(FPL) team selection algorithm([dghosef.me/fpl-writeup](ht
 * Scraped soccer player statistics from the FPL API and saved in Pandas dataframe
 * Developed algorithm to predict future player performances based on past performances, upcoming fixture difficulty, etc
 * Utilized linear programming solver to maximize predicted future performance levels under constraints of FPL rules to build team
+--->
