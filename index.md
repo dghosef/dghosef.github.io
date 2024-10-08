@@ -1,6 +1,7 @@
 ---
 title: Home
 ---
+Website TBD
 <!---
 ## Hi all
 Joe here. I enjoy making computers do stuff, playing the piano and guitar, all things soccer, and messing around with my [two wonderful sausage dogs](dogs.jpg). I'm currently studying computer science at Stanford University where I also TA CS106A, CS106B, and CS140E.
