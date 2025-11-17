@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Help Queue</title>
+<style>
+  body { font-family:sans-serif; max-width:600px; margin:40px auto; }
+  input, button { padding:8px; font-size:16px; }
+  li { margin:8px 0; }
+  button.remove { margin-left:10px; }
+</style>
+</head>
+
+<body>
+<h2>Help Queue</h2>
+
+<input id="name" placeholder="Your name">
+<input id="comment" placeholder="Comment / issue">
+<button onclick="joinQueue()">Join Queue</button>
+
+<ul id="queue"></ul>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-database-compat.js"></script>
+
+<script>
+// ----------------------
+// 🔥 Replace this block
+// ----------------------
+const firebaseConfig = {
+  apiKey: "YOUR_KEY",
+  authDomain: "YOUR_DOMAIN",
+  databaseURL: "YOUR_DB_URL",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_BUCKET",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+// ----------------------
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database().ref("helpQueue");
+
+// Add student
+function joinQueue() {
+  const name = document.getElementById("name").value.trim();
+  const comment = document.getElementById("comment").value.trim();
+  if (!name) return;
+  db.push({ name, comment });
+  document.getElementById("comment").value = "";
+}
+
+// Render queue
+db.on("value", snapshot => {
+  const list = snapshot.val() || {};
+  const ul = document.getElementById("queue");
+  ul.innerHTML = "";
+
+  Object.entries(list).forEach(([id, item]) => {
+    const li = document.createElement("li");
+    li.textContent = `${item.name}: ${item.comment}`;
+    const btn = document.createElement("button");
+    btn.textContent = "Done";
+    btn.className = "remove";
+    btn.onclick = () => db.child(id).remove();
+    li.appendChild(btn);
+    ul.appendChild(li);
+  });
+});
+</script>
+
+</body>
+</html>
